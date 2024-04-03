@@ -9,7 +9,7 @@ import DocsPage from './pages/DocsPage/DocsPage';
 function App() {
   return (
     <Router>
-      <div>
+      <div style={{ overflowX: 'hidden' }}>
         <Header />
         <Routes>
             <Route path="/" element={<HomePage />} />
