@@ -2,6 +2,8 @@ import React from 'react';
 import { Typography, Grid, Card, CardContent, CardActions, Button, Box, Container, styled } from '@mui/material';
 import { keyframes } from '@mui/system';
 import HeroSection from '../../components/HeroSection/HeroSection';
+import CommunitySection from '../../components/CommunitySection/CommunitySection';
+import CodeExamplesSection from '../../components/CodeExamplesSection/CodeExamplesSection';
 
 const fadeIn = keyframes`
   0% {
@@ -15,124 +17,169 @@ const fadeIn = keyframes`
 `;
 
 const StyledContainer = styled(Container)(({ theme }) => ({
-  marginTop: theme.spacing(8),
-  marginBottom: theme.spacing(8),
-  
+  marginTop: theme.spacing(12),
+  marginBottom: theme.spacing(12),
 }));
 
-
+const SectionTitle = styled(Typography)(({ theme }) => ({
+  marginBottom: theme.spacing(6),
+  textAlign: 'center',
+  fontWeight: 'bold',
+  color: theme.palette.text.primary,
+  textTransform: 'uppercase',
+  letterSpacing: '2px',
+}));
 
 const FeatureCard = styled(Card)(({ theme }) => ({
-  maxWidth: 345,
+  maxWidth: 400,
+  height: '100%',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
   transition: 'transform 0.3s ease-in-out',
   '&:hover': {
     transform: 'translateY(-10px)',
   },
   animation: `${fadeIn} 1s ease-in-out`,
   backgroundColor: theme.palette.background.paper,
-  boxShadow: theme.shadows[4],
-  borderRadius: theme.spacing(1),
+  boxShadow: theme.shadows[8],
+  borderRadius: theme.spacing(2),
 }));
 
 const FeatureCardContent = styled(CardContent)(({ theme }) => ({
-  padding: theme.spacing(3),
+  padding: theme.spacing(4),
 }));
 
 const FeatureCardActions = styled(CardActions)(({ theme }) => ({
-  justifyContent: 'flex-end',
+  justifyContent: 'center',
   padding: theme.spacing(2),
+  backgroundColor: theme.palette.primary.main,
 }));
 
-const SectionTitle = styled(Typography)(({ theme }) => ({
-  marginBottom: theme.spacing(4),
-  textAlign: 'center',
+const FeatureButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.primary.contrastText,
   fontWeight: 'bold',
-  color: theme.palette.text.primary,
+  textTransform: 'uppercase',
+  '&:hover': {
+    backgroundColor: theme.palette.primary.dark,
+  },
+}));
+
+const EcosystemCard = styled(Card)(({ theme }) => ({
+  maxWidth: 400,
+  height: '100%',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
+  transition: 'transform 0.3s ease-in-out',
+  '&:hover': {
+    transform: 'translateY(-10px)',
+  },
+  animation: `${fadeIn} 1s ease-in-out`,
+  backgroundColor: theme.palette.background.paper,
+  boxShadow: theme.shadows[8],
+  borderRadius: theme.spacing(2),
+}));
+
+const EcosystemCardContent = styled(CardContent)(({ theme }) => ({
+  padding: theme.spacing(4),
+}));
+
+const EcosystemCardActions = styled(CardActions)(({ theme }) => ({
+  justifyContent: 'center',
+  padding: theme.spacing(2),
+  backgroundColor: theme.palette.secondary.main,
+}));
+
+const EcosystemButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.secondary.contrastText,
+  fontWeight: 'bold',
+  textTransform: 'uppercase',
+  '&:hover': {
+    backgroundColor: theme.palette.secondary.dark,
+  },
 }));
 
 const HomePage = () => {
   return (
-    <StyledContainer >
+    <>
       {/* Hero Section */}
-      <HeroSection/>
+      <HeroSection />
 
-      {/* Features Section */}
-      <Box marginTop={8} marginBottom={8}>
-        <SectionTitle variant="h4">Key Features</SectionTitle>
-        <Grid container spacing={4} justifyContent="center">
-          {/* Feature 1 */}
-          <Grid item>
-            <FeatureCard>
-              <FeatureCardContent>
-                <Typography variant="h5" gutterBottom>
-                  Fast Execution
-                </Typography>
-                <Typography>
-                  Experience lightning-fast execution speeds, enhancing your development workflow.
-                </Typography>
-              </FeatureCardContent>
-              <FeatureCardActions>
-                <Button size="small" color="primary">
-                  Learn More
-                </Button>
-              </FeatureCardActions>
-            </FeatureCard>
+      <StyledContainer>
+        {/* Features Section */}
+        <Box marginTop={12} marginBottom={12}>
+          <SectionTitle variant="h4">Key Features</SectionTitle>
+          <Grid container spacing={6} justifyContent="center">
+            {/* Feature 1 */}
+            <Grid item>
+              <FeatureCard>
+                <FeatureCardContent>
+                  <Typography variant="h5" gutterBottom>
+                    Fast Execution
+                  </Typography>
+                  <Typography>
+                    Experience lightning-fast execution speeds, enhancing your development workflow.
+                  </Typography>
+                </FeatureCardContent>
+                <FeatureCardActions>
+                  <FeatureButton size="large">Learn More</FeatureButton>
+                </FeatureCardActions>
+              </FeatureCard>
+            </Grid>
+            {/* Add more feature cards */}
           </Grid>
-          {/* Add more feature cards */}
-        </Grid>
-      </Box>
+        </Box>
 
-      {/* Code Examples Section */}
-      <Box marginBottom={8}>
-        <SectionTitle variant="h4">Code Examples</SectionTitle>
-        {/* Add code examples or code snippets */}
-      </Box>
+        {/* Code Examples Section */}
+        <Box marginBottom={12}>
+          <SectionTitle variant="h4">Code Examples</SectionTitle>
+          <CodeExamplesSection />
+        </Box>
 
-      {/* Ecosystem Section */}
-      <Box marginBottom={8}>
-        <SectionTitle variant="h4">Ecosystem</SectionTitle>
-        <Grid container spacing={4} justifyContent="center">
-          {/* Ecosystem Item 1 */}
-          <Grid item>
-            <FeatureCard>
-              <FeatureCardContent>
-                <Typography variant="h5" gutterBottom>
-                  Package Manager
-                </Typography>
-                <Typography>
-                  Easily manage dependencies and libraries with our package manager.
-                </Typography>
-              </FeatureCardContent>
-              <FeatureCardActions>
-                <Button size="small" color="primary">
-                  Learn More
-                </Button>
-              </FeatureCardActions>
-            </FeatureCard>
+        {/* Ecosystem Section */}
+        <Box marginBottom={12}>
+          <SectionTitle variant="h4">Ecosystem</SectionTitle>
+          <Grid container spacing={6} justifyContent="center">
+            {/* Ecosystem Item 1 */}
+            <Grid item>
+              <EcosystemCard>
+                <EcosystemCardContent>
+                  <Typography variant="h5" gutterBottom>
+                    Package Manager
+                  </Typography>
+                  <Typography>
+                    Easily manage dependencies and libraries with our package manager.
+                  </Typography>
+                </EcosystemCardContent>
+                <EcosystemCardActions>
+                  <EcosystemButton size="large">Explore</EcosystemButton>
+                </EcosystemCardActions>
+              </EcosystemCard>
+            </Grid>
+            {/* Add more ecosystem items */}
           </Grid>
-          {/* Add more ecosystem items */}
-        </Grid>
-      </Box>
+        </Box>
 
-      {/* Community Section */}
-      <Box marginBottom={8}>
-        <SectionTitle variant="h4">Community</SectionTitle>
-        {/* Add community-related content */}
-      </Box>
+        {/* Community Section */}
+        <Box marginBottom={12}>
+          <SectionTitle variant="h4">Community</SectionTitle>
+          <CommunitySection />
+        </Box>
+        {/* <Box marginBottom={12}>
+          <SectionTitle variant="h4">Community</SectionTitle> */}
+          {/* Add community-related content */}
+        {/* </Box> */}
 
-      {/* Getting Started Section */}
-      <Box marginBottom={8}>
-        <SectionTitle variant="h4">Getting Started</SectionTitle>
-        {/* Add getting started steps or links */}
-      </Box>
+        {/* Getting Started Section */}
+        <Box marginBottom={12}>
+          <SectionTitle variant="h4">Getting Started</SectionTitle>
+          {/* Add getting started steps or links */}
+        </Box>
+      </StyledContainer>
 
-      {/* Footer */}
-      <Box textAlign="center" marginTop={8}>
-        <Typography variant="body2" color="textSecondary">
-          © {new Date().getFullYear()} My Programming Language. All rights reserved.
-        </Typography>
-      </Box>
-    </StyledContainer>
+
+    </>
   );
 };
 

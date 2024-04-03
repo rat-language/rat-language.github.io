@@ -17,7 +17,7 @@ const HeroContainer = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
   background: 'linear-gradient(45deg, #6a11cb 0%, #2575fc 100%)',
   color: theme.palette.primary.contrastText,
-  paddingTop: theme.spacing(12),
+  paddingTop: theme.spacing(25),
   paddingBottom: theme.spacing(12),
   textAlign: 'center',
   position: 'relative',
