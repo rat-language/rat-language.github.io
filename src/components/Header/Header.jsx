@@ -54,6 +54,9 @@ const Header = () => {
           <NavigationButton color="inherit" component={Link} to="/">
             Home
           </NavigationButton>
+          <NavigationButton color="inherit" component={Link} to="/compile">
+            Compile
+          </NavigationButton>
           <NavigationButton color="inherit" component={Link} to="/docs">
             Documentation
           </NavigationButton>
