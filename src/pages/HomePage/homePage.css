@@ -1,12 +1,25 @@
-.home-page {
-    padding: 20px;
+.home-container {
+    text-align: center;
   }
   
-  .home-page h2 {
-    color: #333;
+  .intro h1 {
+    margin-bottom: 0.5em;
   }
   
-  .home-page p {
-    color: #666;
+  .features ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .get-started button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .get-started button:hover {
+    background-color: #0056b3;
   }
   

@@ -1,20 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import HomePage from './pages/HomePage/HomePage';
+import Footer from './components/Footer/Footer'; // Adjust the path as necessary
+import HomePage from './pages/HomePage/HomePage'; // Adjust the path according to your project structure
 import DocsPage from './pages/DocsPage/DocsPage';
-import './App.css';
+
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div>
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/docs" element={<DocsPage />} />
-          {/* Add more routes as needed */}
+            <Route path="/" element={<HomePage />} />
+            <Route path="/docs" element={<DocsPage />} />
+          {/* Future routes will go here */}
         </Routes>
         <Footer />
       </div>
@@ -23,3 +23,5 @@ function App() {
 }
 
 export default App;
+
+
