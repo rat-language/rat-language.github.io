@@ -1,18 +1,12 @@
 // theme.js
+
 import { createTheme } from '@mui/material/styles';
 
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-    primary: {
-      main: '#your-primary-color',
-    },
-    secondary: {
-      main: '#your-secondary-color',
-    },
-    // Customize other colors as needed
+const theme = createTheme({
+  typography: {
+    fontFamily: '"IBM Plex Sans", sans-serif',
   },
-  // Customize other theme properties (typography, spacing, etc.) as needed
+  // other theme configurations...
 });
 
-export default darkTheme;
+export default theme;

@@ -7,6 +7,7 @@ import CodeExamplesSection from '../../components/CodeExamplesSection/CodeExampl
 import EcosystemSection from '../../components/EcosystemSection/EcosystemSection';
 import FeaturesSection from '../../components/FeaturesSection/FeaturesSection'; 
 import AboutSection from '../../components/AboutSection/AboutSection';
+// import '../styles/theme.js';
 
 const fadeIn = keyframes`
   0% {
@@ -31,6 +32,7 @@ const SectionTitle = styled(Typography)(({ theme }) => ({
   color: theme.palette.text.primary,
   textTransform: 'uppercase',
   letterSpacing: '2px',
+  fontFamily: 'IBM Plex Sans, sans-serif',
 }));
 
 const FeatureCard = styled(Card)(({ theme }) => ({
