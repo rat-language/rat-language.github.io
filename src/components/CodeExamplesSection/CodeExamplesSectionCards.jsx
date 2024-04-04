@@ -52,22 +52,6 @@ for (let i = 0; i < 10; i++) {
 }`,
       image: 'path/to/fibonacci-image.jpg',
     },
-    {
-        title: 'Factorial',
-        description: 'Generating the Factorials MyLanguage.',
-        code: `function fibonacci(n) {
-    if (n <= 1) {
-      return n;
-    }
-    return fibonacci(n - 1) + fibonacci(n - 2);
-  }
-  
-  for (let i = 0; i < 10; i++) {
-    print(fibonacci(i));
-  }`,
-        image: 'path/to/fibonacci-image.jpg',
-      },
-    
     // Add more code examples
   ];
 
@@ -77,6 +61,7 @@ for (let i = 0; i < 10; i++) {
         {codeExamples.map((example, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
             <CodeExampleCard>
+              <CodeExampleImage image={example.image} title={example.title} />
               <CardContent>
                 <CodeExampleTitle variant="h6">{example.title}</CodeExampleTitle>
                 <CodeExampleDescription>{example.description}</CodeExampleDescription>
