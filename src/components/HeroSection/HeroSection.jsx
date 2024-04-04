@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, Button, Box, Container, styled } from '@mui/material';
 import { keyframes } from '@mui/system';
+import { Link } from 'react-router-dom';
 
 const fadeIn = keyframes`
   0% {
@@ -85,8 +86,8 @@ const HeroSection = () => {
         <HeroSubtitle variant="h5">
           The next-generation language for innovative and efficient software development.
         </HeroSubtitle>
-        <HeroButton variant="contained" size="large">
-          Get Started
+        <HeroButton variant="contained" size="large" component={Link} to="/compile">
+          Try it out
         </HeroButton>
       </HeroContent>
     </HeroContainer>

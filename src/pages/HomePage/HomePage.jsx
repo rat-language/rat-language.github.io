@@ -4,6 +4,7 @@ import { keyframes } from '@mui/system';
 import HeroSection from '../../components/HeroSection/HeroSection';
 import CommunitySection from '../../components/CommunitySection/CommunitySection';
 import CodeExamplesSection from '../../components/CodeExamplesSection/CodeExamplesSection';
+import EcosystemSection from '../../components/EcosystemSection/EcosystemSection';
 
 const fadeIn = keyframes`
   0% {
@@ -138,28 +139,10 @@ const HomePage = () => {
         </Box>
 
         {/* Ecosystem Section */}
-        <Box marginBottom={12}>
+        {/* <Box marginBottom={12}>
           <SectionTitle variant="h4">Ecosystem</SectionTitle>
-          <Grid container spacing={6} justifyContent="center">
-            {/* Ecosystem Item 1 */}
-            <Grid item>
-              <EcosystemCard>
-                <EcosystemCardContent>
-                  <Typography variant="h5" gutterBottom>
-                    Package Manager
-                  </Typography>
-                  <Typography>
-                    Easily manage dependencies and libraries with our package manager.
-                  </Typography>
-                </EcosystemCardContent>
-                <EcosystemCardActions>
-                  <EcosystemButton size="large">Explore</EcosystemButton>
-                </EcosystemCardActions>
-              </EcosystemCard>
-            </Grid>
-            {/* Add more ecosystem items */}
-          </Grid>
-        </Box>
+          <EcosystemSection />
+        </Box> */}
 
         {/* Community Section */}
         <Box marginBottom={12}>
