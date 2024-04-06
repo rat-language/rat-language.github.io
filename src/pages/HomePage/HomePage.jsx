@@ -138,19 +138,13 @@ const HomePage = () => {
         
         {/* Community Section */}
         <Box marginBottom={12}>
-          <SectionTitle variant="h4">Community</SectionTitle>
+          <SectionTitle variant="h4">The Team</SectionTitle>
           <CommunitySection />
         </Box>
         {/* <Box marginBottom={12}>
           <SectionTitle variant="h4">Community</SectionTitle> */}
           {/* Add community-related content */}
         {/* </Box> */}
-        <Divider sx={{ my: 4 }} />
-        {/* Getting Started Section */}
-        <Box marginBottom={12}>
-          <SectionTitle variant="h4">Getting Started</SectionTitle>
-          {/* Add getting started steps or links */}
-        </Box>
       </StyledContainer>
 
 

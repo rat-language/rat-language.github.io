@@ -3,7 +3,7 @@ import { Container, Typography, Box, Grid, Card, CardContent, CardActions, Butto
 import { Link } from 'react-router-dom';
 
 const DocsContainer = styled(Container)(({ theme }) => ({
-  marginTop: theme.spacing(8),
+  marginTop: theme.spacing(12),
   marginBottom: theme.spacing(8),
 }));
 
@@ -112,6 +112,7 @@ const DocsPage = () => {
 
         {/* Add more documentation sections */}
       </Grid>
+      
     </DocsContainer>
   );
 };
