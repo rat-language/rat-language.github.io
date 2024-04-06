@@ -1,10 +1,13 @@
 import React from 'react';
-import { Typography, Grid, Card, CardContent, CardActions, Button, Box, Container, styled } from '@mui/material';
+import { Typography, Grid, Card, CardContent, CardActions, Button, Box, Container, styled, Divider } from '@mui/material';
 import { keyframes } from '@mui/system';
 import HeroSection from '../../components/HeroSection/HeroSection';
 import CommunitySection from '../../components/CommunitySection/CommunitySection';
 import CodeExamplesSection from '../../components/CodeExamplesSection/CodeExamplesSection';
 import EcosystemSection from '../../components/EcosystemSection/EcosystemSection';
+import FeaturesSection from '../../components/FeaturesSection/FeaturesSection'; 
+import AboutSection from '../../components/AboutSection/AboutSection';
+// import '../styles/theme.js';
 
 const fadeIn = keyframes`
   0% {
@@ -29,6 +32,7 @@ const SectionTitle = styled(Typography)(({ theme }) => ({
   color: theme.palette.text.primary,
   textTransform: 'uppercase',
   letterSpacing: '2px',
+  fontFamily: 'IBM Plex Sans, sans-serif',
 }));
 
 const FeatureCard = styled(Card)(({ theme }) => ({
@@ -110,55 +114,37 @@ const HomePage = () => {
       <StyledContainer>
         {/* Features Section */}
         <Box marginTop={12} marginBottom={12}>
-          <SectionTitle variant="h4">Key Features</SectionTitle>
-          <Grid container spacing={6} justifyContent="center">
-            {/* Feature 1 */}
-            <Grid item>
-              <FeatureCard>
-                <FeatureCardContent>
-                  <Typography variant="h5" gutterBottom>
-                    Fast Execution
-                  </Typography>
-                  <Typography>
-                    Experience lightning-fast execution speeds, enhancing your development workflow.
-                  </Typography>
-                </FeatureCardContent>
-                <FeatureCardActions>
-                  <FeatureButton size="large">Learn More</FeatureButton>
-                </FeatureCardActions>
-              </FeatureCard>
-            </Grid>
-            {/* Add more feature cards */}
-          </Grid>
+          <SectionTitle variant="h4">Features</SectionTitle>
+          <FeaturesSection />
         </Box>
-
+        <Divider sx={{ my: 4 }} />
+        {/* About Section */}
+        <Box marginBottom={12}>
+          {/* <SectionTitle variant="h4">About</SectionTitle> */}
+          <AboutSection />
+        </Box>
+        <Divider sx={{ my: 4 }} />
         {/* Code Examples Section */}
         <Box marginBottom={12}>
           <SectionTitle variant="h4">Code Examples</SectionTitle>
           <CodeExamplesSection />
         </Box>
-
+        <Divider sx={{ my: 4 }} />
         {/* Ecosystem Section */}
         {/* <Box marginBottom={12}>
           <SectionTitle variant="h4">Ecosystem</SectionTitle>
           <EcosystemSection />
         </Box> */}
-
+        
         {/* Community Section */}
         <Box marginBottom={12}>
-          <SectionTitle variant="h4">Community</SectionTitle>
+          <SectionTitle variant="h4">The Team</SectionTitle>
           <CommunitySection />
         </Box>
         {/* <Box marginBottom={12}>
           <SectionTitle variant="h4">Community</SectionTitle> */}
           {/* Add community-related content */}
         {/* </Box> */}
-
-        {/* Getting Started Section */}
-        <Box marginBottom={12}>
-          <SectionTitle variant="h4">Getting Started</SectionTitle>
-          {/* Add getting started steps or links */}
-        </Box>
       </StyledContainer>
 
 

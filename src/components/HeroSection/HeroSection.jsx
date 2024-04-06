@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Button, Box, Container, styled } from '@mui/material';
 import { keyframes } from '@mui/system';
 import { Link } from 'react-router-dom';
+import './heroSection.css';
 
 const fadeIn = keyframes`
   0% {
@@ -38,6 +39,7 @@ const HeroTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 'bold',
   marginBottom: theme.spacing(2),
   animation: `${fadeIn} 1s ease-in-out`,
+  fontFamily: 'IBM Plex Sans, sans-serif',
 }));
 
 const HeroSubtitle = styled(Typography)(({ theme }) => ({
