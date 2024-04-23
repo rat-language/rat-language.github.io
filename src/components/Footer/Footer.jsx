@@ -31,7 +31,7 @@ const Footer = () => {
     <FooterContainer component="footer">
       <FooterContent maxWidth="md">
         <FooterText variant="body1" align="center">
-          &copy; {new Date().getFullYear()} My Programming Language. All rights reserved.
+          &copy; {new Date().getFullYear()} Rat-language. All rights reserved.
         </FooterText>
         <FooterLink href="/terms" variant="body2">
           Terms of Service

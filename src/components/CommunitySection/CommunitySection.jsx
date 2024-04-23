@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
 
+
 const TeamMemberCard = styled(Card)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
@@ -45,8 +46,8 @@ const SocialLinks = styled(Box)(({ theme }) => ({
 const CommunitySection = () => {
   const teamMembers = [
     {
-      name: 'John Doe',
-      role: 'Founder & CEO',
+      name: 'Alex Alvarez',
+      role: 'RAT Creator',
       bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
       avatar: 'path/to/john-doe-avatar.jpg',
       github: 'https://github.com/johndoe',
@@ -54,17 +55,17 @@ const CommunitySection = () => {
       twitter: 'https://twitter.com/johndoe',
     },
     {
-      name: 'Jane Smith',
-      role: 'CTO',
+      name: 'Chris Beaudoin',
+      role: 'RAT Creator',
       bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
-      avatar: 'path/to/jane-smith-avatar.jpg',
-      github: 'https://github.com/janesmith',
-      linkedin: 'https://www.linkedin.com/in/janesmith',
-      twitter: 'https://twitter.com/janesmith',
+      avatar: '../../Photos/ChrisBeaudoin.jpg',
+      github: 'https://github.com/cee8',
+      linkedin: 'https://www.linkedin.com/in/-beaudoin',
+      twitter: 'https://twitter.com/chris_beauds',
     },
     {
-      name: 'Michael Johnson',
-      role: 'Lead Developer',
+      name: 'Riley Kehoe',
+      role: 'RAT Creator',
       bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
       avatar: 'path/to/michael-johnson-avatar.jpg',
       github: 'https://github.com/michaeljohnson',
@@ -72,8 +73,8 @@ const CommunitySection = () => {
       twitter: 'https://x.com/michaeljohnson',
     },
     {
-      name: 'Emily Davis',
-      role: 'UI/UX Designer',
+      name: 'Carter Esparza',
+      role: 'RAT Creator',
       bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
       avatar: 'path/to/emily-davis-avatar.jpg',
       github: 'https://github.com/emilydavis',
@@ -81,8 +82,8 @@ const CommunitySection = () => {
       twitter: 'https://twitter.com/emilydavis',
     },
     {
-      name: 'David Wilson',
-      role: 'Marketing Manager',
+      name: 'Sam Processor',
+      role: 'RAT Creator',
       bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
       avatar: 'path/to/david-wilson-avatar.jpg',
       github: 'https://github.com/davidwilson',

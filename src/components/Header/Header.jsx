@@ -48,7 +48,7 @@ const Header = () => {
     <StyledAppBar position="fixed" elevation={0}>
       <StyledToolbar>
         <Logo variant="h6" component="div">
-          My Programming Language
+          Rat-language
         </Logo>
         <div>
           <NavigationButton color="inherit" component={Link} to="/">

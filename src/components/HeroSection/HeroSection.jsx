@@ -17,7 +17,9 @@ const fadeIn = keyframes`
 
 const HeroContainer = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
-  background: 'linear-gradient(45deg, #6a11cb 0%, #2575fc 100%)',
+  // background: `url('path/to/your/image.jpg') no-repeat center center/cover`, //JUST IMAGE
+  background: `linear-gradient(45deg, #6a11cb 0%, #2575fc 100%), url('../../photos/RatBanner.jpeg') no-repeat center center/cover`, //GRADIENT WITH IMAGE
+  // background: 'linear-gradient(45deg, #6a11cb 0%, #2575fc 100%)', //NORMAL GRADIENT
   color: theme.palette.primary.contrastText,
   paddingTop: theme.spacing(25),
   paddingBottom: theme.spacing(12),
@@ -84,7 +86,7 @@ const HeroSection = () => {
     <HeroContainer>
       <HeroBackground />
       <HeroContent maxWidth={false}>
-        <HeroTitle variant="h2">Welcome to My Programming Language</HeroTitle>
+        <HeroTitle variant="h2">Welcome to Rat-language</HeroTitle>
         <HeroSubtitle variant="h5">
           The next-generation language for innovative and efficient software development.
         </HeroSubtitle>

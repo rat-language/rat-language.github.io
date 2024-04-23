@@ -7,7 +7,11 @@ import SpeedIcon from '@mui/icons-material/Speed'; // For performance features
 import SecurityIcon from '@mui/icons-material/Security'; // For security features
 import GroupIcon from '@mui/icons-material/Group'; // For community or collaborative features
 import ExtensionIcon from '@mui/icons-material/Extension'; // For extensibility or plugin features
-
+import AddReactionIcon from '@mui/icons-material/AddReaction';
+import { Add, Calculate } from '@mui/icons-material';
+import CalculateIcon from '@mui/icons-material/Calculate';
+import CodeIcon from '@mui/icons-material/Code';
+import PeopleIcon from '@mui/icons-material/People';
 
 const SectionTitle = styled(Typography)(({ theme }) => ({
   marginBottom: theme.spacing(6),
@@ -52,24 +56,24 @@ const features = [
     Icon: SpeedIcon,
   },
   {
-    title: 'Robust Security',
-    description: 'Advanced security features to keep your data safe and secure.',
-    Icon: SecurityIcon,
+    title: 'Easy To use',
+    description: 'Simple and intuitive interface that is easy to use for beginners and experts.',
+    Icon: AddReactionIcon,
   },
   {
-    title: 'Collaborative Environment',
-    description: 'Tools and features that enhance teamwork and collaboration.',
-    Icon: GroupIcon,
+    title: 'Math Functions',
+    description: 'Built-in math functions to help you with your calculations.',
+    Icon: CalculateIcon,
   },
   {
-    title: 'Extensibility',
-    description: 'Easily extend and customize with plugins and integrations.',
-    Icon: ExtensionIcon,
+    title: 'Made With Love',
+    description: 'Developed with love and care by a passionate community of developers.',
+    Icon: PeopleIcon,
   },
   {
-    title: 'Extensibility',
-    description: 'Easily extend and customize with plugins and integrations.',
-    Icon: ExtensionIcon,
+    title: 'Familiar Syntax',
+    description: 'Easy-to-understand syntax that is similar to popular programming languages.',
+    Icon: CodeIcon,
   },
   // Add more features as needed
 ];
