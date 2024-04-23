@@ -12,7 +12,7 @@ function LibraryFeatureCard({ title, description, icon, expandedComponent }) {
   const matches = useMediaQuery(theme.breakpoints.up('md'));
 
   return (
-    <Card sx={{ maxWidth: 345, m: 2, boxShadow: 3, '&:hover': { boxShadow: 8 } }}>
+    <Card sx={{ maxWidth: 345, m: 8, boxShadow: 3, '&:hover': { boxShadow: 8 } }}>
       <CardActionArea>
         <CardMedia>
           {React.cloneElement(icon, { style: { fontSize: matches ? 60 : 40, margin: '36px', color: theme.palette.primary.main } })}

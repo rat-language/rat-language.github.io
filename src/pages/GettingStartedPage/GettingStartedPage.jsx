@@ -32,10 +32,10 @@ const GettingStarted = () => {
     <CustomContainer maxWidth="lg">
       <Box textAlign="center" marginBottom={4}>
         <Highlight variant="h2" component="div" gutterBottom>
-          Getting Started with YourLanguageName
+          Getting Started with Rat-language
         </Highlight>
         <Typography variant="h6" color="textSecondary" component="p">
-          Dive into the simplicity and power of YourLanguageName. Start building right away.
+          Dive into the simplicity and power of Rat-language. Start building right away.
         </Typography>
       </Box>
 
@@ -47,7 +47,7 @@ const GettingStarted = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography paragraph>
-                Begin by downloading the YourLanguageName compiler or interpreter from the official [source]. Make sure to verify the system requirements before installation.
+                Begin by downloading the Rat-language compiler or interpreter from the official [source]. Make sure to verify the system requirements before installation.
               </Typography>
               <Typography paragraph>
                 For detailed installation instructions, refer to our <Link href="#">installation guide</Link>.
@@ -79,10 +79,10 @@ const GettingStarted = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography paragraph>
-                Your first program in YourLanguageName will be the classic "Hello, World!". Open your text editor or IDE, create a new file named 'helloWorld.yln', and enter the following code:
+                Your first program in Rat-language will be the classic "Hello, World!". Open your text editor or IDE, create a new file named 'helloWorld.yln', and enter the following code:
               </Typography>
               <CodeBlock>
-                # YourLanguageName syntax for Hello World<br />
+                # Rat-language syntax for Hello World<br />
                 print("Hello, World!")
               </CodeBlock>
               <Tooltip title="Run your code">
@@ -91,7 +91,7 @@ const GettingStarted = () => {
                 </IconButton>
               </Tooltip>
               <Typography paragraph>
-                Save your file and run it using the command line or your IDE's run feature. Congratulations, you've just written and executed your first YourLanguageName program!
+                Save your file and run it using the command line or your IDE's run feature. Congratulations, you've just written and executed your first Rat-language program!
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -104,7 +104,7 @@ const GettingStarted = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography paragraph>
-                YourLanguageName comes packed with features designed to make development intuitive and efficient. Here are some key features you might find interesting:
+                Rat-language comes packed with features designed to make development intuitive and efficient. Here are some key features you might find interesting:
               </Typography>
               <CodeBlock>
                 # Feature 1: Example Code<br />
