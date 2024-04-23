@@ -117,12 +117,12 @@ const HomePage = () => {
           <SectionTitle variant="h4">Features</SectionTitle>
           <FeaturesSection />
         </Box>
-        <Divider sx={{ my: 4 }} />
+        {/* <Divider sx={{ my: 4 }} /> */}
         {/* About Section */}
-        <Box marginBottom={12}>
+        {/* <Box marginBottom={12}> */}
           {/* <SectionTitle variant="h4">About</SectionTitle> */}
-          <AboutSection />
-        </Box>
+          {/* <AboutSection /> */}
+        {/* </Box> */}
         <Divider sx={{ my: 4 }} />
         {/* Code Examples Section */}
         <Box marginBottom={12}>

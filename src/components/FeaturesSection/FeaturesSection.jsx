@@ -8,6 +8,7 @@ import SecurityIcon from '@mui/icons-material/Security'; // For security feature
 import GroupIcon from '@mui/icons-material/Group'; // For community or collaborative features
 import ExtensionIcon from '@mui/icons-material/Extension'; // For extensibility or plugin features
 
+
 const SectionTitle = styled(Typography)(({ theme }) => ({
   marginBottom: theme.spacing(6),
   textAlign: 'center',
