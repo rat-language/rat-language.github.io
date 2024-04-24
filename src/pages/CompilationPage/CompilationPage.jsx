@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { Box, Typography, TextField, Button, Grid, Paper, styled } from '@mui/material';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import axios from 'axios';
+import { pink } from '@mui/material/colors';
 
 const CompilationContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -33,6 +35,7 @@ const OutputContainer = styled(Box)(({ theme }) => ({
   flex: 1,
   padding: theme.spacing(3),
   backgroundColor: theme.palette.grey[900],
+  
   color: theme.palette.common.white,
 }));
 
@@ -47,6 +50,7 @@ const OutputBox = styled(Box)(({ theme }) => ({
   fontFamily: 'monospace',
   fontSize: '1rem',
   overflow: 'auto',
+  // overflowX: '100px',
   marginTop: theme.spacing(2),
 }));
 
@@ -58,11 +62,19 @@ const CompilationPage = () => {
   const [code, setCode] = useState('');
   const [output, setOutput] = useState('');
 
-  const handleCompile = () => {
-    // TODO: Integrate with your grammar, analyzer, and compiler
-    // Compile the code and update the output state with the result
-    setOutput('Compilation output goes here');
-  };
+const handleCompile = async () => {
+  try {
+    const response = await axios.post('http://localhost:4000/compile', {
+      code,
+      outputType: 'js' // Or any other output type your compiler supports
+    });
+    console.log("Response Data:", response.data); // Log the response data
+    setOutput(response.data.output || "No output returned."); // Handle undefined or null output
+  } catch (error) {
+    console.error("Request Failed:", error);
+    setOutput(`Compilation Error: ${error.response ? error.response.data.error : error.message}`);
+  }
+};
 
   return (
     <CompilationContainer>

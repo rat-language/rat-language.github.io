@@ -44,41 +44,29 @@ const CodeExamplesSection = () => {
     //   image: 'path/to/hello-world-image.jpg',
     // },
 
-      //FIZZBUZZ
-      {
-        title: 'FizzBuzz',
-        description: 'FizzBuzz program in Rat-language.',
-        code: `void fizzbuzz(n:int){
-          for i in 0...n {
-            var fbnum:str = "";
-            if ((i % 3==0) || (i % 5 == 0)){
-              if (i % 3 == 0){ fbnum += "Fizz"; }
-              if (i % 5==0){ fbnum += "Buzz"; }
-            }else{fbnum = str(i);}
-            print(fbnum);
-          }
-        }
-        
-        # prints fizzbuzz up to 16 in this case
-        fizzbuzz(16);`,
-        image: 'path/to/fizzbuzz-image.jpg',
-      },
+
 
 
     //FIBONACCI
     {
       title: 'Fibonacci Sequence',
       description: 'Generating the Fibonacci sequence in MyLanguage.',
-      code: `function fibonacci(n) {
-  if (n <= 1) {
-    return n;
-  }
-  return fibonacci(n - 1) + fibonacci(n - 2);
-}
-
-for (let i = 0; i < 10; i++) {
-  print(fibonacci(i));
-}`,
+      code: `int fib(n:int){
+        # returns the nth value of the fibonacci sequence
+        var a:int = 0;
+        var b:int = 1;
+        var c:int = 0;
+    
+        if (n == 0){
+            return a;
+        }
+        for i in 2...n {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        return b;
+    }`,
       image: 'path/to/fibonacci-image.jpg',
     },
 
@@ -100,6 +88,27 @@ for (let i = 0; i < 10; i++) {
   }`,
         image: 'path/to/factorial-image.jpg',
       },
+
+  
+    //PRIME
+    {
+      title: 'Prime Number Checker',
+      description: 'A function to check if a number is prime in Rat-language.',
+      code: `bool prime(n:int){
+        if (n <= 1) { return false; }
+        if (n <= 3) { return true; }
+        if (n % 2 == 0) || (n % 3 == 0) { return false; }
+        var i:int = 5;
+        while i*i <= n {
+          if (n%i==0) || (n%(i+2) ==0) {
+              return false;
+            }
+            i += 6;
+        }
+        return true;
+    }`,
+      image: 'path/to/prime-image.jpg',
+    },
 
     //CALL
     {
@@ -128,26 +137,26 @@ for (let i = 0; i < 10; i++) {
       image: 'path/to/optional-image.jpg',
     },
 
-
-    //PRIME
+    //FIZZBUZZ
     {
-      title: 'Prime Number Checker',
-      description: 'A function to check if a number is prime in Rat-language.',
-      code: `bool prime(n:int){
-        if (n <= 1) { return false; }
-        if (n <= 3) { return true; }
-        if (n % 2 == 0) || (n % 3 == 0) { return false; }
-        var i:int = 5;
-        while i*i <= n {
-          if (n%i==0) || (n%(i+2) ==0) {
-              return false;
-            }
-            i += 6;
+      title: 'FizzBuzz',
+      description: 'FizzBuzz program in Rat-language.',
+      code: `void fizzbuzz(n:int){
+        for i in 0...n {
+          var fbnum:str = "";
+          if ((i % 3==0) || (i % 5 == 0)){
+            if (i % 3 == 0){ fbnum += "Fizz"; }
+            if (i % 5==0){ fbnum += "Buzz"; }
+          }else{fbnum = str(i);}
+          print(fbnum);
         }
-        return true;
-    }`,
-      image: 'path/to/prime-image.jpg',
+      }
+      
+      # prints fizzbuzz up to 16 in this case
+      fizzbuzz(16);`,
+      image: 'path/to/fizzbuzz-image.jpg',
     },
+    
 
 
     //WHILELOOPTEST
