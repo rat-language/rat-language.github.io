@@ -47,8 +47,8 @@ const CommunitySection = () => {
   const teamMembers = [
     {
       name: 'Alex Alvarez',
-      role: 'RAT Creator',
-      bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
+      // role: 'RAT Creator',
+      // bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
       avatar: 'path/to/john-doe-avatar.jpg',
       github: 'https://github.com/johndoe',
       linkedin: 'https://www.linkedin.com/in/johndoe',
@@ -56,8 +56,8 @@ const CommunitySection = () => {
     },
     {
       name: 'Chris Beaudoin',
-      role: 'RAT Creator',
-      bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
+      // role: 'RAT Creator',
+      // bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
       avatar: '../../Photos/ChrisBeaudoin.jpg',
       github: 'https://github.com/cee8',
       linkedin: 'https://www.linkedin.com/in/-beaudoin',
@@ -65,8 +65,8 @@ const CommunitySection = () => {
     },
     {
       name: 'Riley Kehoe',
-      role: 'RAT Creator',
-      bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
+      // role: 'RAT Creator',
+      // bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
       avatar: 'path/to/michael-johnson-avatar.jpg',
       github: 'https://github.com/michaeljohnson',
       linkedin: 'https://www.linkedin.com/in/michaeljohnson',
@@ -74,8 +74,8 @@ const CommunitySection = () => {
     },
     {
       name: 'Carter Esparza',
-      role: 'RAT Creator',
-      bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
+      // role: 'RAT Creator',
+      // bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
       avatar: 'path/to/emily-davis-avatar.jpg',
       github: 'https://github.com/emilydavis',
       linkedin: 'https://www.linkedin.com/in/emilydavis',
@@ -83,8 +83,8 @@ const CommunitySection = () => {
     },
     {
       name: 'Sam Processor',
-      role: 'RAT Creator',
-      bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
+      // role: 'RAT Creator',
+      // bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
       avatar: 'path/to/david-wilson-avatar.jpg',
       github: 'https://github.com/davidwilson',
       linkedin: 'https://www.linkedin.com/in/davidwilson',
