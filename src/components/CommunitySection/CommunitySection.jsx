@@ -3,7 +3,11 @@ import { Grid, Card, CardContent, CardMedia, Typography, Box, Avatar, styled, Ic
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
-
+import ChrisBeaudoinImg from '../../Photos/ChrisImg.jpg';
+import AlexAlvarezImg from '../../Photos/AlexImg.jpg';
+import RileyImage from '../../Photos/RileyImg.jpg';
+import CarterImage from '../../Photos/CarterImg.jpg';
+import SamImage from '../../Photos/SamImg.jpg';
 
 const TeamMemberCard = styled(Card)(({ theme }) => ({
   display: 'flex',
@@ -49,7 +53,7 @@ const CommunitySection = () => {
       name: 'Alex Alvarez',
       // role: 'RAT Creator',
       // bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
-      avatar: 'path/to/john-doe-avatar.jpg',
+      avatar: AlexAlvarezImg,
       github: 'https://github.com/johndoe',
       linkedin: 'https://www.linkedin.com/in/johndoe',
       twitter: 'https://twitter.com/johndoe',
@@ -58,7 +62,7 @@ const CommunitySection = () => {
       name: 'Chris Beaudoin',
       // role: 'RAT Creator',
       // bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
-      avatar: '../../Photos/ChrisBeaudoin.jpg',
+      avatar: ChrisBeaudoinImg,
       github: 'https://github.com/cee8',
       linkedin: 'https://www.linkedin.com/in/-beaudoin',
       twitter: 'https://twitter.com/chris_beauds',
@@ -67,7 +71,7 @@ const CommunitySection = () => {
       name: 'Riley Kehoe',
       // role: 'RAT Creator',
       // bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
-      avatar: 'path/to/michael-johnson-avatar.jpg',
+      avatar: RileyImage,
       github: 'https://github.com/michaeljohnson',
       linkedin: 'https://www.linkedin.com/in/michaeljohnson',
       twitter: 'https://x.com/michaeljohnson',
@@ -76,7 +80,7 @@ const CommunitySection = () => {
       name: 'Carter Esparza',
       // role: 'RAT Creator',
       // bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
-      avatar: 'path/to/emily-davis-avatar.jpg',
+      avatar: CarterImage,
       github: 'https://github.com/emilydavis',
       linkedin: 'https://www.linkedin.com/in/emilydavis',
       twitter: 'https://twitter.com/emilydavis',
@@ -85,7 +89,7 @@ const CommunitySection = () => {
       name: 'Sam Processor',
       // role: 'RAT Creator',
       // bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
-      avatar: 'path/to/david-wilson-avatar.jpg',
+      avatar: SamImage,
       github: 'https://github.com/davidwilson',
       linkedin: 'https://www.linkedin.com/in/davidwilson',
       twitter: 'https://twitter.com/davidwilson',

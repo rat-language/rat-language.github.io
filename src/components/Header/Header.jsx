@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { styled } from '@mui/system';
+import rat from '../../Photos/rat.png';
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   background: 'rgba(255, 255, 255, 0.8)',
@@ -31,6 +32,12 @@ const Logo = styled(Typography)(({ theme }) => ({
   color: '#333',
 }));
 
+const LogoImage = styled('img')(({ theme }) => ({
+  marginRight: theme.spacing(2), 
+  height: '40px',
+}));
+
+
 const NavigationButton = styled(Button)(({ theme }) => ({
   marginLeft: theme.spacing(2),
   textTransform: 'uppercase',
@@ -47,6 +54,7 @@ const Header = () => {
   return (
     <StyledAppBar position="fixed" elevation={0}>
       <StyledToolbar>
+        <LogoImage src={rat} alt="Logo" />
         <Logo variant="h6" component="div">
           Rat-language
         </Logo>
