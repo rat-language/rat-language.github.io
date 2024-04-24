@@ -29,14 +29,43 @@ const CodeExampleDescription = styled(Typography)(({ theme }) => ({
   marginBottom: theme.spacing(2),
 }));
 
+const StyledCardContent = styled(CardContent)(({ theme }) => ({
+  // maxHeight: '200px',
+  // overflow: 'auto',
+}));
+
 const CodeExamplesSection = () => {
   const codeExamples = [
-    {
-      title: 'Hello World',
-      description: 'A simple "Hello, World!" program in MyLanguage.',
-      code: `print("Hello, World!")`,
-      image: 'path/to/hello-world-image.jpg',
-    },
+    //EXPEREMENTING
+    // {
+    //   title: 'Experimenting',
+    //   description: 'A simple "Hello, World!" program in Rat-language.',
+    //   code: `print("Hello, World!");`,
+    //   image: 'path/to/hello-world-image.jpg',
+    // },
+
+      //FIZZBUZZ
+      {
+        title: 'FizzBuzz',
+        description: 'FizzBuzz program in Rat-language.',
+        code: `void fizzbuzz(n:int){
+          for i in 0...n {
+            var fbnum:str = "";
+            if ((i % 3==0) || (i % 5 == 0)){
+              if (i % 3 == 0){ fbnum += "Fizz"; }
+              if (i % 5==0){ fbnum += "Buzz"; }
+            }else{fbnum = str(i);}
+            print(fbnum);
+          }
+        }
+        
+        # prints fizzbuzz up to 16 in this case
+        fizzbuzz(16);`,
+        image: 'path/to/fizzbuzz-image.jpg',
+      },
+
+
+    //FIBONACCI
     {
       title: 'Fibonacci Sequence',
       description: 'Generating the Fibonacci sequence in MyLanguage.',
@@ -52,21 +81,87 @@ for (let i = 0; i < 10; i++) {
 }`,
       image: 'path/to/fibonacci-image.jpg',
     },
+
+    //FACTORIAL
     {
         title: 'Factorial',
-        description: 'Generating the Factorials MyLanguage.',
-        code: `function fibonacci(n) {
-    if (n <= 1) {
-      return n;
-    }
-    return fibonacci(n - 1) + fibonacci(n - 2);
-  }
-  
-  for (let i = 0; i < 10; i++) {
-    print(fibonacci(i));
+        description: 'Computing Factorials Rat-language.',
+        code: `int factorial(n:int){
+          var value: int = 1;
+          if (n != 0 && n != 1){
+              for i in 2...n {
+                  value *= i;
+              }
+          }
+          return value;
+      }
+      
+      print(factorial(5));
   }`,
-        image: 'path/to/fibonacci-image.jpg',
+        image: 'path/to/factorial-image.jpg',
       },
+
+    //CALL
+    {
+      title: 'Call',
+      description: 'A call to a function in Rat-language.',
+      code: `int sqr(x: int) {return (x * x);}
+      print(sqr(3) + 1);`,
+      image: 'path/to/call-image.jpg',
+    },
+    
+
+    //HELLO WORLD
+    {
+      title: 'Hello World',
+      description: 'A simple "Hello, World!" program in Rat-language.',
+      code: `print("Hello, World!");`,
+      image: 'path/to/hello-world-image.jpg',
+    },
+    
+
+    //OPTIONAL
+    {
+      title: 'Optional',
+      description: 'Optional type in Rat-language.',
+      code: `var x:int? = no int; x = some 100;`,
+      image: 'path/to/optional-image.jpg',
+    },
+
+
+    //PRIME
+    {
+      title: 'Prime Number Checker',
+      description: 'A function to check if a number is prime in Rat-language.',
+      code: `bool prime(n:int){
+        if (n <= 1) { return false; }
+        if (n <= 3) { return true; }
+        if (n % 2 == 0) || (n % 3 == 0) { return false; }
+        var i:int = 5;
+        while i*i <= n {
+          if (n%i==0) || (n%(i+2) ==0) {
+              return false;
+            }
+            i += 6;
+        }
+        return true;
+    }`,
+      image: 'path/to/prime-image.jpg',
+    },
+
+
+    //WHILELOOPTEST
+    {
+      title: 'While Loop',
+      description: 'A simple while loop in Rat-language.',
+      code: `var i:int = 0;
+      while (i <= 10){
+        print(i);
+        i += 1;
+      }`,
+      image: 'path/to/wile-loop-image.jpg',
+    },   
+
     
     // Add more code examples
   ];
@@ -80,9 +175,11 @@ for (let i = 0; i < 10; i++) {
               <CardContent>
                 <CodeExampleTitle variant="h6">{example.title}</CodeExampleTitle>
                 <CodeExampleDescription>{example.description}</CodeExampleDescription>
-                <SyntaxHighlighter language="javascript" style={atomDark}>
+                <StyledCardContent>
+                <SyntaxHighlighter language="javascript" style={atomDark} >
                   {example.code}
                 </SyntaxHighlighter>
+                </StyledCardContent>
               </CardContent>
             </CodeExampleCard>
           </Grid>

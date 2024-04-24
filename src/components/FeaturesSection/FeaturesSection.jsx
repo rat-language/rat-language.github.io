@@ -67,7 +67,7 @@ const features = [
   },
   {
     title: 'Made With Love',
-    description: 'Developed with love and care by a passionate community of developers.',
+    description: 'Developed with love and care by the passionate community of Rat-language developers.',
     Icon: PeopleIcon,
   },
   {
