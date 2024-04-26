@@ -33,12 +33,12 @@ const Footer = () => {
         <FooterText variant="body1" align="center">
           &copy; {new Date().getFullYear()} Rat-language. All rights reserved.
         </FooterText>
-        <FooterLink href="/terms" variant="body2">
+        {/* <FooterLink href="/terms" variant="body2">
           Terms of Service
         </FooterLink>
         <FooterLink href="/privacy" variant="body2">
           Privacy Policy
-        </FooterLink>
+        </FooterLink> */}
       </FooterContent>
     </FooterContainer>
   );
