@@ -13,7 +13,7 @@ const CustomContainer = styled(Container)(({ theme }) => ({
 }));
 
 const Highlight = styled(Typography)(({ theme }) => ({
-  background: `linear-gradient(45deg, ${theme.palette.secondary.light} 30%, ${theme.palette.secondary.main} 90%)`,
+  background: `linear-gradient(45deg, ${'#ff416c'} 30%, ${'#ef416c'} 90%)`,
   '-webkit-background-clip': 'text',
   '-webkit-text-fill-color': 'transparent',
 }));
@@ -43,14 +43,14 @@ const GettingStarted = () => {
         <Grid item xs={12} md={6}>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography variant="h6">1. Installation</Typography>
+              <Typography variant="h6">1. Understanding the structure</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography paragraph>
-                Begin by downloading the Rat-language compiler or interpreter from the official [source]. Make sure to verify the system requirements before installation.
+                The Rat Organization is comprised of three main repositories: <Link href="https://github.com/rat-language/rat" target="_blank" rel="noopener">The Rat-language</Link>, The Rat-language <Link href="https://github.com/rat-language/output-backend" target="_blank" rel="noopener">Online Compiler</Link>, and The Rat-language <Link href="https://github.com/rat-language/rat-language.github.io" target="_blank" rel="noopener">Website</Link>.
               </Typography>
               <Typography paragraph>
-                For detailed installation instructions, refer to our <Link href="#">installation guide</Link>.
+                For a detailed installation overview of the language, refer to our langauge  <Link href="https://github.com/rat-language/rat/blob/main/README.md">README</Link>.
               </Typography>
             </AccordionDetails>
           </Accordion>
