@@ -3,6 +3,8 @@ import { Typography, Button, Box, Container, styled } from '@mui/material';
 import { keyframes } from '@mui/system';
 import { Link } from 'react-router-dom';
 import './heroSection.css';
+import RatCloseUpImg from '../../Photos/RatCloseUpImg.jpg'
+
 
 const fadeIn = keyframes`
   0% {
@@ -17,8 +19,8 @@ const fadeIn = keyframes`
 
 const HeroContainer = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
-  // background: `url('path/to/your/image.jpg') no-repeat center center/cover`, //JUST IMAGE
-  background: `linear-gradient(45deg, #6a11cb 0%, #2575fc 100%), url('../../photos/RatBanner.jpeg') no-repeat center center/cover`, //GRADIENT WITH IMAGE
+  background: `url(${RatCloseUpImg}) no-repeat center center/cover`, //JUST IMAGE
+  // background: `linear-gradient(45deg, #6a11cb 0%, #2575fc 100%), url('../../photos/RatBanner.jpeg') no-repeat center center/cover`, //GRADIENT WITH IMAGE
   // background: 'linear-gradient(45deg, #6a11cb 0%, #2575fc 100%)', //NORMAL GRADIENT
   color: theme.palette.primary.contrastText,
   paddingTop: theme.spacing(25),
