@@ -94,11 +94,11 @@ const documentationSections = [
     link: '/docs/syntax',
   },
   {
-    title: 'Standard Library',
-    description: "Discover the built-in functions and modules in Rat-language's standard library.",
+    title: 'Rat-language',
+    description: "The story of Rat, the programming language that's simple, fast, and fun.",
     content:
       'Rat-language comes with a rich standard library that provides a wide range of built-in functions and modules to simplify common programming tasks. This section explores the most commonly used functions and modules, explaining their usage and providing practical examples to help you leverage the power of the standard library.',
-    link: '/docs/standard-library',
+    link: '/docs/rat-language',
   },
   // Add more documentation sections
 ];

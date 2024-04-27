@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage/HomePage'; // Adjust the path according t
 import DocsPage from './pages/DocsPage/DocsPage';
 import GettingStarted from './pages/GettingStartedPage/GettingStartedPage';
 import LanguageSyntax from './pages/LanguageSyntaxPage/LanguageSyntaxPage';
-import StandardLibrary from './pages/StandardLibraryPage/StandardLibraryPage';
+import RatLanguage from './pages/RatLanguagePage/RatLanguagePage';
 import CompilationPage from './pages/CompilationPage/CompilationPage';
 import { ThemeProvider } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -26,7 +26,7 @@ function App() {
               <Route path="/docs" element={<DocsPage />} />
               <Route path="/docs/getting-started" element={<GettingStarted />} />
               <Route path="/docs/syntax" element={<LanguageSyntax />} />
-              <Route path="/docs/standard-library" element={<StandardLibrary />} />
+              <Route path="/docs/rat-language" element={<RatLanguage />} />
               {/* Future routes will go here */}
             </Routes>
           </Box>
