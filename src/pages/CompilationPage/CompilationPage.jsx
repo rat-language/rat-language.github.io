@@ -69,9 +69,10 @@ const CompilationPage = () => {
 
 const handleCompile = async () => {
   try {
-    const response = await axios.post('http://localhost:4000/compile', {
+    const response = await axios.post(`${process.env.REACT_APP_API_URL || 'http://localhost:4000'}compile`, {
+    // const response = await axios.post(`${process.env.REACT_APP_API_URL }compile`, {
       code,
-      outputType: 'js' // Or any other output type your compiler supports
+      outputType: 'js' // Adjust this as necessary for your application
     });
     console.log("Response Data:", response.data); // Log the response data
     setOutput(response.data.output || "No output returned."); // Handle undefined or null output
