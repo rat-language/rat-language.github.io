@@ -24,9 +24,9 @@ const SectionTitle = styled(Typography)(({ theme }) => ({
   marginBottom: theme.spacing(8),
   textAlign: 'center',
   fontWeight: 'bold',
-  color: theme.palette.primary.main,
   textTransform: 'uppercase',
   letterSpacing: theme.spacing(0.5),
+  color: '#ff416c',
 }));
 
 const DocCard = styled(Card)(({ theme }) => ({
@@ -40,6 +40,7 @@ const DocCard = styled(Card)(({ theme }) => ({
     transform: 'translateY(-15px)',
     boxShadow: theme.shadows[12],
   },
+  
 }));
 
 const DocCardContent = styled(CardContent)(({ theme }) => ({
@@ -62,6 +63,11 @@ const DocButton = styled(Button)(({ theme }) => ({
   '&:hover': {
     backgroundColor: theme.palette.primary.dark,
   },
+  backgroundColor: '#ff416c',
+  '&:hover': {
+    backgroundColor: '#e03560', // Darker shade for hover
+  },
+  width: '100%',
 }));
 
 const ExpandMore = styled(IconButton)(({ theme, expand }) => ({
@@ -107,10 +113,10 @@ const DocsPage = () => {
   return (
     <DocsContainer maxWidth="lg">
       <SectionTitle variant="h2">Documentation</SectionTitle>
-      <Typography variant="h5" align="center" paragraph>
+      <Typography marginBottom="0" variant="h5" align="center" paragraph>
         Comprehensive guides and resources to help you master Rat-language
       </Typography>
-      <Grid container spacing={8} marginTop={8}>
+      <Grid container columnSpacing={8} rowSpacing={4} marginTop={0}>
         {documentationSections.map((section, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <DocCard>
@@ -118,26 +124,13 @@ const DocsPage = () => {
                 <Typography variant="h4" gutterBottom>
                   {section.title}
                 </Typography>
+                <Divider variant="middle" sx={{ margin: (theme) => theme.spacing(2, 0) }} />
                 <Typography variant="subtitle1">{section.description}</Typography>
-                <Divider variant="middle" sx={{ margin: (theme) => theme.spacing(4, 0) }} />
-                <Collapse in={expandedSection === index} timeout="auto" unmountOnExit>
-                  <Typography variant="body1" color="textSecondary">
-                    {section.content}
-                  </Typography>
-                </Collapse>
               </DocCardContent>
               <DocCardActions>
                 <DocButton component={Link} to={section.link} color="primary" variant="contained" size="large">
                   Explore
                 </DocButton>
-                <ExpandMore
-                  expand={expandedSection === index}
-                  onClick={() => handleExpandClick(index)}
-                  aria-expanded={expandedSection === index}
-                  aria-label="show more"
-                >
-                  <ExpandMoreIcon />
-                </ExpandMore>
               </DocCardActions>
             </DocCard>
           </Grid>

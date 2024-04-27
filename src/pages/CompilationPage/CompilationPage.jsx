@@ -56,6 +56,11 @@ const OutputBox = styled(Box)(({ theme }) => ({
 
 const CompileButton = styled(Button)(({ theme }) => ({
   marginTop: theme.spacing(2),
+  backgroundColor: '#ff416c',
+  '&:hover': {
+    backgroundColor: '#e03560', // Darker shade for hover
+  },
+  width: '100%'
 }));
 
 const CompilationPage = () => {

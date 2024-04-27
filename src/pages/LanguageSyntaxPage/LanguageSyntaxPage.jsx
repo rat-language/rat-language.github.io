@@ -6,7 +6,7 @@ const CustomContainer = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
   display: 'flex',
   height: '100%',
-  marginTop: theme.spacing(8),
+  marginTop: theme.spacing(10),
 }));
 
 const CustomTabPanel = styled(Box)(({ theme }) => ({
@@ -72,6 +72,16 @@ export default function LanguageSyntax() {
         <Tab label="Control Structures" {...a11yProps(1)} />
         <Tab label="Functions" {...a11yProps(2)} />
         <Tab label="Operators" {...a11yProps(3)} />
+        <Tab label="Operators" {...a11yProps(3)} />
+        <Tab label="Operators" {...a11yProps(3)} />
+        <Tab label="Operators" {...a11yProps(3)} />
+        <Tab label="Operators" {...a11yProps(3)} />
+        <Tab label="Operators" {...a11yProps(3)} />
+        <Tab label="Operators" {...a11yProps(3)} />
+        <Tab label="Operators" {...a11yProps(3)} />
+        <Tab label="Operators" {...a11yProps(3)} />
+        <Tab label="Operators" {...a11yProps(3)} />
+        
         {/* Add more tabs as needed */}
       </CustomTabs>
       <TabPanel value={value} index={0}>
@@ -99,6 +109,8 @@ export default function LanguageSyntax() {
           {/* Add more data types as needed */}
         </Grid>
       </TabPanel>
+
+      
       <TabPanel value={value} index={1}>
         <CustomPaper>
           <Typography variant="h6">If Statement</Typography>

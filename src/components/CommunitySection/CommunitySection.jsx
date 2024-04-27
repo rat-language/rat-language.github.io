@@ -3,7 +3,7 @@ import { Grid, Card, CardContent, CardMedia, Typography, Box, Avatar, styled, Ic
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
-import ChrisBeaudoinImg from '../../Photos/ChrisImg.jpg';
+import ChrsImg from '../../Photos/ChrsImg.jpg';
 import AlexAlvarezImg from '../../Photos/AlexImg.jpg';
 import RileyImage from '../../Photos/RileyImg.jpg';
 import CarterImage from '../../Photos/CarterImg.jpg';
@@ -62,7 +62,7 @@ const CommunitySection = () => {
       name: 'Chris Beaudoin',
       // role: 'RAT Creator',
       // bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget risus.',
-      avatar: ChrisBeaudoinImg,
+      avatar: ChrsImg,
       github: 'https://github.com/cee8',
       linkedin: 'https://www.linkedin.com/in/-beaudoin',
       twitter: 'https://twitter.com/chris_beauds',
