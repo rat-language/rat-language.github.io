@@ -11,7 +11,7 @@ import CompilationPage from './pages/CompilationPage/CompilationPage';
 import { ThemeProvider } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 
-import theme from './styles/theme'; // replace with the path to your theme file
+import theme from './theme'; // replace with the path to your theme file
 
 function App() {
   return (
