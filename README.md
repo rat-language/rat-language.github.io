@@ -1,3 +1,3 @@
 # Rat Language Website
 
-React App for Rat Language website
+React App for Rat Language website.
